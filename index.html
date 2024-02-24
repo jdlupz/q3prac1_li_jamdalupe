@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt("Enter your first input: ");
+        var num2 = prompt("Enter your second input:");
+
+        document.write("You have entered: " + "<br>First input: " + num1 + "<br>Second input: " + num2 + "<br>Operators" + "<br>I. Arithmetic:");
+
+        var arithmetic = parseInt(num1) + parseInt(num2);
+        
+        document.write("<br>a. " + arithmetic + "<br>II. Comparison: ");
+
+        var comparison = num1==num2;
+        
+        if(comparison=="true"){
+            document.write("<br>a. true");
+        }
+        else{
+            document.write("<br>a. false");
+        }
+
+        document.write("<br>III. Logical: ");
+
+        var logical = !(num1==num2);
+
+        if(logical=="true"){
+            document.write("<br>a. false");
+        }
+        else{
+            document.write("<br>a. true");
+        }
+        
+        document.write("<br>IV. Assignment: ");
+
+        var assignment = num1-=num2;
+
+        document.write("<br>a. " + assignment);
+
+    </script>
+</body>
+</html>
